@@ -35,6 +35,20 @@ External data is not used, in accordance with the assignment requirements.
 
 - Analyze the results both quantitatively and qualitatively.
 
+## Results
+
+The optimized CatBoost model achieved the best overall performance among the evaluated classifiers.
+
+| Model | Accuracy | Macro-F1 |
+|---|---:|---:|
+| Logistic Regression | 0.50 | 0.5345 |
+| Decision Tree | 0.46 | 0.4683 |
+| **CatBoost** | **0.58** | **0.6200** |
+
+Accuracy measures the overall proportion of correct predictions, while macro-F1 gives equal weight to each class, making it particularly useful for evaluating performance on an imbalanced dataset.
+
+Hyperparameter optimization yielded modest improvements for CatBoost and the Decision Tree, while Logistic Regression showed virtually no improvement over its baseline.
+
 ## Status
 
-In progress.
+**Completed.**
